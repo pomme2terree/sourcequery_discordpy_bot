@@ -44,7 +44,7 @@ async def info(ctx):
         embed=discord.Embed(title=srv.info['name'], color=0x0080ff)
         embed.add_field(name='Joueurs', value=srv.info['players'], inline=True)
         embed.add_field(name='Slots', value=srv.info['max_players'], inline=True)
-        embed.add_field(name='Bots', value=srv.info['bots'], inline=True)
+        embed.add_field(name='Latence', value=srv.ping(2), inline=True)
         embed.add_field(name='Gamemode', value=srv.info['game'], inline=True)
         embed.add_field(name='Map', value=srv.info['map'], inline=True)
         embed.add_field(name='Version', value=srv.info['version'], inline=True)
